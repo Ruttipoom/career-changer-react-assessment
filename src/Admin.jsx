@@ -1,6 +1,6 @@
 import React from "react";
 import "./Admin.css";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 
 
 function Admin (props){
@@ -18,6 +18,12 @@ function Admin (props){
             props.setEmployee([...props.employee, newEmployee])
         }
     }   
+
+    useEffect(() => {
+        setName('');
+        setLastname('');
+        setPosition('');
+      }, [props.employee]);
 
 
     //รับค่า index ที่map มาเเต่ละตัว จะได้ลบได้

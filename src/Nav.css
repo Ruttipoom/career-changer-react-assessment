@@ -1,0 +1,28 @@
+*ิ{
+    
+} 
+
+ul {
+    display: flex;
+    flex-direction: row;
+    border: 2.4px rgb(136, 25, 240) solid;
+    justify-content: end;
+    gap: 15px;
+    text-decoration:  none;
+    list-style: none;
+    height: 40px;
+    margin: 0;
+    align-items: center;
+    padding-right: 15px; 
+   
+}
+
+a {
+    text-decoration:  none;
+    color: black;
+}
+
+li {
+    font-size: larger;
+}
+

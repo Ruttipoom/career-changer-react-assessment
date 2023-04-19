@@ -1,0 +1,18 @@
+#Sectorbtn {
+    display: flex;
+    justify-content: center;
+    gap: 45px;
+    padding-bottom: 15px;
+    
+}
+
+
+.secbtn{
+    width: 150px;
+    height: 46px;
+    background-color: #5E5BFF;
+    border: none;
+    color: #FFFFFF;
+    border-radius: 5px;
+    
+}
