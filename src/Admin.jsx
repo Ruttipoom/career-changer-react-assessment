@@ -18,7 +18,9 @@ function Admin (props){
         }
     }   
 
-    const deleteData = () => {
+
+    //รับค่า index ที่map มาเเต่ละตัว จะได้ลบได้
+    const deleteData = (index) => {
         const newEmployees = [...props.employee];
         newEmployees.splice(index, 1);
         props.setEmployee(newEmployees);
