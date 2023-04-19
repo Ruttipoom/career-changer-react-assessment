@@ -1,6 +1,7 @@
 import React from "react";
-import Layout from "./Layout";
-import { useState,useEffect } from "react";
+import "./Admin.css";
+import { useState } from "react";
+
 
 function Admin (props){
     const [name, setName] = useState('')
@@ -26,11 +27,14 @@ function Admin (props){
         props.setEmployee(newEmployees);
     };
 
+    const ClearAll = () => {
+        props.setEmployee([]);
+    }
+
     return (
         <>
-            <div>
-                <label>Create User Here</label>
-                <br />
+        <label>Create User Here</label>
+            <div className="Info">
                 <input 
                 type="text" 
                 onChange={(event) => {setName(event.target.value)}} 
@@ -49,9 +53,9 @@ function Admin (props){
                 value={position}
                 placeholder="Position"
                 />
-                <button onClick={createUser}>Add</button>
+                <button className="ADD" onClick={createUser}>Add</button>
             </div>
-            <table>
+            <table> 
                 <tr>
                     <th>Names</th>
                     <th>Last name</th>
@@ -63,13 +67,14 @@ function Admin (props){
                         <tr key={index}>
                             <td>{item.name}</td>
                             <td>{item.lastname}</td>
-                            <tr>{item.position}</tr>
-                            <td><button onClick={()=> deleteData(index)}>Delete</button></td>
+                            <td>{item.position}</td>
+                            <td><button className="DleEACH" onClick={()=> deleteData(index)}>Delete</button></td> 
                         </tr>
                     )
                 }   
              )}       
             </table>
+            <button className="dleALL" onClick={ClearAll}>Clear All Data</button>
         </>
     
 
