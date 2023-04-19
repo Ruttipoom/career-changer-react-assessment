@@ -8,13 +8,12 @@ function User (props) {
                     <th>Names</th>
                     <th>Last name</th>
                     <th>Position</th>
-                    <th>Action</th>
                 </tr>
                 {props.employee.map((item) =>{
                     return (
                         <tr>
                             <td>{item.name}</td>
-                            <td>{item.lastName}</td>
+                            <td>{item.lastname}</td>
                             <td>{item.position}</td>
                         </tr>
                     )

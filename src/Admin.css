@@ -1,0 +1,86 @@
+label{
+    font-size: 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+input {  
+    padding: 10px 15px;
+    gap: 38px   ;
+    width: 300px;
+    height: 25px;
+    left: 0%;
+    right: 0%;
+    top: 0px;
+    background: #FFFFFF;
+    border: 1px solid #E2E1E5;
+    border-radius: 5px;
+}
+
+.ADD {
+    width: 70px;
+    height: 46px;
+    background-color: #5E5BFF;
+    border: none;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.Info {
+    display: flex;
+    justify-content: center;
+    gap: 38px;
+    padding: 20px;
+}
+
+
+.DleEACH {
+    width: 176px;
+    height: 16px;
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+    background-color: #ffffff;
+    color: red;
+}
+
+.dleALL {
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    height: 16px;
+    border: none;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 130%;
+    background-color: #ffffff;
+    color: red; 
+    text-align:end;
+}
+
+table {
+    border: 0.5px black solid;
+    border-collapse:collapse ;
+    
+
+}
+
+th, td {
+    border: .5px black solid;
+    position: relative;
+    width: 800px;
+    height: 108px;
+    text-align: center;
+}
+
+th {
+    background-color: #b2b1f5;
+}

@@ -1,0 +1,16 @@
+.OwnerINFO {
+ background-color: #ffffff;
+ display: flex;  
+ flex-direction: column;
+
+}
+
+img {
+    width: 400px;
+    align-self: center;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
