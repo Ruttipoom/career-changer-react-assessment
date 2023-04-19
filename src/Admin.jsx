@@ -18,6 +18,11 @@ function Admin (props){
         }
     }   
 
+    const deleteData = () => {
+        const newEmployees = [...props.employee];
+        newEmployees.splice(index, 1);
+        props.setEmployee(newEmployees);
+    };
 
     return (
         <>
@@ -51,13 +56,13 @@ function Admin (props){
                     <th>Position</th>
                     <th>Action</th>
                 </tr>
-                {props.employee.map((item) => {
+                {props.employee.map((item,index) => {
                     return (
-                        <tr>
+                        <tr key={index}>
                             <td>{item.name}</td>
                             <td>{item.lastname}</td>
                             <tr>{item.position}</tr>
-                            <td><button>Delete</button></td>
+                            <td><button onClick={()=> deleteData(index)}>Delete</button></td>
                         </tr>
                     )
                 }   
